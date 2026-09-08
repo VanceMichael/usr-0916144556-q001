@@ -1,0 +1,19 @@
+[
+  {
+    "submission_id": "sub-12",
+    "volume_id": "vol-3",
+    "page": 18,
+    "base_revision": 2,
+    "segments": [
+      {
+        "box": [
+          10,
+          20,
+          30,
+          40
+        ],
+        "text": "山川"
+      }
+    ]
+  }
+]

@@ -1,0 +1,7 @@
+services:
+  scaffold-check:
+    image: python:3.12-alpine
+    working_dir: /workspace
+    volumes:
+      - .:/workspace:ro
+    command: python /workspace/scaffold/validate.py

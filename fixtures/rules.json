@@ -1,0 +1,10 @@
+{
+  "version": "2026-09-08",
+  "theme": "四库全书数字化成果展让古籍走出故纸堆",
+  "reason_codes": [
+    "ANCIENT_TEXT",
+    "VARIANT_COLLATION",
+    "COORDINATE_ALIGNMENT"
+  ],
+  "notes": "Deterministic evaluation fixture; implementation must not fetch remote data."
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "古籍数字化异文汇校服务 request",
+  "type": "object",
+  "required": [
+    "submission_id",
+    "volume_id",
+    "page",
+    "base_revision",
+    "segments"
+  ],
+  "properties": {
+    "submission_id": {},
+    "volume_id": {},
+    "page": {},
+    "base_revision": {},
+    "segments": {}
+  },
+  "additionalProperties": false
+}
