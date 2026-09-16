@@ -1,15 +1,12 @@
-# 古籍数字化异文汇校服务 scaffold
+# 古籍异文汇校服务
 
-This repository is an intentionally incomplete starting point for a pure backend service. It contains input contracts, deterministic fixtures, and a Docker-based scaffold validator; no requested business API is implemented.
-
-Business theme: 四库全书数字化成果展让古籍走出故纸堆
-Theme source: https://www.chinanews.com/scroll-news/news1.html
-Required stack: Python 3.12, SQLite, Docker Compose
-
-Validate the baseline inputs with:
+该服务接收卷页转写并保存异文组，供馆员查询当前卷册修订。现有版本支持提交、列表查询和 SQLite 迁移，数据文件默认位于 `data/collation.sqlite3`，也可通过 `COLLATION_DB_PATH` 指定。
 
 ```sh
-docker compose run --rm --no-deps scaffold-check
+python3 -m pip install -e '.[test]'
+python3 -m collation.migrate
+uvicorn collation.app:app --port 0
+pytest
 ```
 
-The implementation must preserve the contracts and fixtures, add the service and its automated tests, and provide a repeatable Docker-based black-box self-test. External production systems must not be used.
+接口契约和确定性样例位于 `contracts/` 与 `fixtures/`。服务不访问外部识别系统。

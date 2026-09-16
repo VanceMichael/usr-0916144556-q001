@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+collation/__init__.py
+collation/app.py
+collation/db.py
+collation/migrate.py
+collation_service.egg-info/PKG-INFO
+collation_service.egg-info/SOURCES.txt
+collation_service.egg-info/dependency_links.txt
+collation_service.egg-info/requires.txt
+collation_service.egg-info/top_level.txt
+tests/test_app.py

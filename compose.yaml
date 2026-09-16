@@ -1,7 +1,8 @@
 services:
-  scaffold-check:
-    image: python:3.12-alpine
+  api:
+    image: python:3.12-slim
     working_dir: /workspace
-    volumes:
-      - .:/workspace:ro
-    command: python /workspace/scaffold/validate.py
+    volumes: [".:/workspace"]
+    command: sh -c "pip install -e . && python -m collation.migrate && uvicorn collation.app:app --host 0.0.0.0 --port 8000"
+    ports: ["${COLLATION_PORT:-0}:8000"]
+
