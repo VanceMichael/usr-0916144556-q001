@@ -9,6 +9,7 @@ secrets/
 node_modules/
 __pycache__/
 .pytest_cache/
+*.egg-info/
 coverage/
 bin/
 dist/
