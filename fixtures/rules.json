@@ -6,5 +6,5 @@
     "VARIANT_COLLATION",
     "COORDINATE_ALIGNMENT"
   ],
-  "notes": "Deterministic evaluation fixture; implementation must not fetch remote data."
+  "notes": "规则样例保持确定性，服务不得从远端获取数据。"
 }
